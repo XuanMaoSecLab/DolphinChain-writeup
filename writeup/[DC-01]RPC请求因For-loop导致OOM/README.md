@@ -84,7 +84,7 @@ func TestBlockchainInfoForloop(t *testing.T) {
 }
 ```
 
-![1](./pic/1.png)
+![1](./1.png)
 
 可以看到内存持续上升，几分钟后程序 crash.
 

@@ -15,7 +15,7 @@
 漏洞代码: [链接](https://github.com/tendermint/tendermint/blob/v0.22.5/rpc/core/blocks.go)
 
 ```go
-func BlockchainInfo(minHeight, maxHeight int64) (*ctypes.ResultBlockchainInfo, error) {
+func BlockchainInfo(ctx *rpctypes.Context, minHeight, maxHeight int64) (*ctypes.ResultBlockchainInfo, error) {
 	if minHeight == 0 {
 		minHeight = 1
 	}

@@ -86,7 +86,7 @@ func TestBlockchainInfoForloop(t *testing.T) {
 
 ![1](./pic/1.png)
 
-可以看到CPU和内存飙升，几分钟后程序 crash.
+可以看到内存持续上升，几分钟后程序 crash.
 
 ### 启动节点复现
 
@@ -95,8 +95,6 @@ func TestBlockchainInfoForloop(t *testing.T) {
 ```bash
 curl 'http:///blockchain?minHeight=-9223372036854775808&maxHeight=-9223372036854775788'
 ```
-
-可以看到CPU和内存飙升，几分钟后程序 crash.
 
 ## 修复
 
